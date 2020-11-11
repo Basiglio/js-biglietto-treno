@@ -7,15 +7,27 @@
 
 // chiedo i km
 var km = prompt("quanti km devi percorrere?")
-console.log(km)
+
+// chiedo l'età
+var anni = prompt("quanti anni hai?")
+
 // definisco prezzo
 var prezzo = 0.21
-console.log(prezzo)
+
+
 // calcolo prezzo
-var prezzoBiglietto = km * prezzo +" €"
-console.log(prezzoBiglietto)
+if (anni < 18) {
+  // prezzo biglietto minorenne scontato
+  var prezzoBiglietto = ((km * prezzo) * 20 / 100);
+} else if (anni >= 65) {
+  // prezzo biglietto over 65
+  var prezzoBiglietto = ((km * prezzo) * 40  / 100);
+}
+else  {
+  // prezzo biglietto normale
+  var prezzoBiglietto = (km * prezzo);
+}
 
 
-
-// visualizzo sconto
-document.getElementById("prezzo").innerHTML = prezzoBiglietto
+// visualizzo prezzo senza sconto
+document.getElementById("prezzo_biglietto").innerHTML = prezzoBiglietto
