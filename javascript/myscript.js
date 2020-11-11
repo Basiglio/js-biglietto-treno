@@ -8,12 +8,14 @@
 // chiedo i km
 var km = prompt("quanti km devi percorrere?")
 console.log(km)
-// definisco sconto
+// definisco prezzo
 var prezzo = 0.21
 console.log(prezzo)
-// calcolo sconto
+// calcolo prezzo
 var prezzoBiglietto = km * prezzo +" €"
 console.log(prezzoBiglietto)
+
+
 
 // visualizzo sconto
 document.getElementById("prezzo").innerHTML = prezzoBiglietto
