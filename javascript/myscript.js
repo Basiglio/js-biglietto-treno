@@ -25,7 +25,7 @@ if (anni < 18) {
 }
 else  {
   // prezzo biglietto normale
-  var prezzoBiglietto = (km * prezzo);
+  var prezzoBiglietto = (km * prezzo + " €");
 }
 
 
